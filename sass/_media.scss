@@ -1,0 +1,130 @@
+    @import "bourbon";
+    @import "vars";
+    /*==========  Desktop First  ==========*/
+    /* Large Devices, Wide Screens */
+    
+    @media only screen and (max-width: 1200px) {
+        /**/
+    }
+    /* Medium Devices, Desktops */
+    
+    @media only screen and (max-width: 992px) {
+        /**/
+    }
+    /* Small Devices, Tablets */
+    
+    @media only screen and (max-width: 768px) {
+        .img-header-line {
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        .header-description {
+            text-align: center;
+        }
+        .navbar-default .navbar-brand {
+            margin-top: 14px;
+        }
+        .navbar-default .navbar-toggle {
+            margin-top: 22px;
+            border-color: none;
+            border: none;
+        }
+        .navbar-nav {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            float: none!important;
+            a {
+                margin: 20px 0px;
+            }
+        }
+        .header-image {
+            background-position: 20% 42%;
+        }
+        .navbar-default .navbar-toggle:hover {
+            background-color: #fff!important;
+        }
+        .navbar-default .navbar-toggle:focus,
+        .navbar-default .navbar-toggle:hover {
+            background-color: #fff;
+        }
+        .display-center-mobile {
+            text-align: center;
+        }
+        .img-center {
+            margin: 0 auto;
+            text-align: center;
+        }
+        .food-text h3 {
+            padding-top: 20px;
+            text-align: center;
+        }
+        .header-description {
+            margin-left: 0px;
+        }
+        .add-to-cart-btn {
+            margin-top: 10px;
+        }
+        .row {
+            margin-right: 0!important;
+            margin-left: 0!important;
+        }
+        .send-btn {
+            width: 90%;
+        }
+        .get-in-touch-input {
+            width: 90%;
+        }
+        #get-in-touch-textarea {
+            width: 90%;
+        }
+    }
+    /* Extra Small Devices, Phones */
+    
+    @media only screen and (max-width: 480px) {
+        .email-section-form {
+            input {
+                width: 90%;
+            }
+            button {
+                width: 90%;
+            }
+        }
+        .food-block-btn {
+            width: 90%;
+        }
+        .food-block-btn {
+            background-image: none;
+        }
+    }
+    /* Custom, iPhone Retina */
+    
+    @media only screen and (max-width: 320px) {
+        /**/
+    }
+    /*==========  Mobile First  ==========*/
+    /* Custom, iPhone Retina */
+    
+    @media only screen and (min-width: 320px) {
+        /**/
+    }
+    /* Extra Small Devices, Phones */
+    
+    @media only screen and (min-width: 480px) {
+        /**/
+    }
+    /* Small Devices, Tablets */
+    
+    @media only screen and (min-width: 768px) {
+        /**/
+    }
+    /* Medium Devices, Desktops */
+    
+    @media only screen and (min-width: 992px) {
+        /**/
+    }
+    /* Large Devices, Wide Screens */
+    
+    @media only screen and (min-width: 1200px) {
+        /**/
+    }

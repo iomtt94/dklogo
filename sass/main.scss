@@ -1,0 +1,449 @@
+    @import "bourbon";
+    @import "fonts";
+    @import "libs";
+    @import "vars";
+    *::-webkit-input-placeholder {
+        color: #666;
+        opacity: 1;
+    }
+    
+    *:-moz-placeholder {
+        color: #666;
+        opacity: 1;
+    }
+    
+    *::-moz-placeholder {
+        color: #666;
+        opacity: 1;
+    }
+    
+    *:-ms-input-placeholder {
+        color: #666;
+        opacity: 1;
+    }
+    
+    body input:focus:required:invalid,
+    body textarea:focus:required:invalid {
+        color: #666;
+    }
+    
+    body input:required:valid,
+    body textarea:required:valid {
+        color: #666;
+    }
+    
+    body {
+        font-size: 16px;
+        min-width: 320px;
+        position: relative;
+        line-height: 1.75;
+        overflow-x: hidden;
+    }
+    
+    .wrapper {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    
+    .img-responsive {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    /* header*/
+    
+    .logo {
+        color: #1987cd!important;
+        font-size: 36px!important;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+    }
+    
+    #navbar1 {
+        height: 80px;
+    }
+    
+    .navbar-brand.logo {
+        margin-top: 24px;
+    }
+    
+    .navbar-default {
+        margin-bottom: 0px!important;
+        background: #fff!important;
+        border: none!important;
+        background-repeat: repeat-x;
+        box-shadow: none!important;
+    }
+    
+    .navbar-header {
+        height: 80px;
+    }
+    
+    .navbar-nav {
+        margin-top: 18px!important;
+        float: right!important;
+        a {
+            @include opensans-text;
+            font-size: 18px;
+            line-height: 18px;
+        }
+    }
+    /*Start of header image with text*/
+    
+    .img-mask {
+        background: url('../img/hero.png');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 620px;
+    }
+    
+    .header-description {
+        margin-left: 30px;
+        padding-top: 110px;
+        color: #fff;
+    }
+    
+    .img-header-text-name {
+        @include opensans-text;
+        font-size: 40px;
+    }
+    
+    .img-header-text-skills {
+        @include opensans-text;
+        font-size: 26px;
+        padding-bottom: 20px;
+    }
+    
+    .img-header-line {
+        width: 42%;
+        height: 1px;
+        background-color: #fff;
+        margin-bottom: 30px;
+    }
+    
+    .img-header-text-content {
+        font-size: 18px;
+        p {
+            margin: 5px 0px;
+            @include opensans-text;
+            line-height: 0.9;
+        }
+    }
+    /*Start of the form*/
+    
+    .header-img-btn {
+        background-image: url(../img/arrow.png);
+        background-repeat: no-repeat;
+        background-position: 190px 21px;
+        margin-top: 40px;
+        width: 229px;
+        height: 63px;
+        color: #fff;
+        background-color: $btn-and-footer;
+        font-size: 20px;
+        @include font-and-border;
+        -webkit-transition: 0.5s ease;
+        transition: 0.5s ease;
+        &:hover {
+            background-color: #169bd7
+        }
+    }
+    /* End of the form*/
+    /*Start of the email-section*/
+    
+    .email-section-mg {
+        margin-top: 50px;
+        padding-bottom: 60px;
+    }
+    
+    .email-section-header {
+        h2 {
+            color: #1899D6;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 700;
+        }
+        p {
+            color: #7f7f7f;
+            @include opensans-text;
+            line-height: 1.1;
+        }
+    }
+    
+    .email-section-checkboxes {
+        margin-bottom: 36px;
+        margin-top: 20px;
+        p {
+            color: #7f7f7f;
+            @include opensans-text;
+        }
+    }
+    
+    .check {
+        margin-right: 6px;
+    }
+    
+    .email-section-form {
+        input {
+            padding-left: 20px;
+            border: 1px solid #a3a3a3;
+            border-radius: 4px;
+            width: 440px;
+            height: 50px;
+            margin-bottom: 15px;
+            font-size: 18px;
+            -webkit-transition: 0.5s ease;
+            transition: 0.5s ease;
+        }
+        ::-webkit-input-placeholder {
+            color: #7f7f7f;
+            @include opensans-text;
+        }
+        ::-moz-placeholder {
+            color: #7f7f7f;
+            @include opensans-text;
+        }
+        :-ms-input-placeholder {
+            color: #7f7f7f;
+            @include opensans-text;
+        }
+        :-moz-placeholder {
+            color: #7f7f7f;
+            @include opensans-text;
+        }
+        button {
+            font-size: 18px;
+            background: $btn-and-footer;
+            width: 440px;
+            height: 50px;
+            color: #fff;
+            @include font-and-border;
+            -webkit-transition: 0.5s ease;
+            transition: 0.5s ease;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    
+    .line {
+        width: 100%;
+        height: 1px;
+        background-color: $line;
+    }
+    /* End of the email section*/
+    /*Start of the section with food*/
+    
+    .food {
+        h2 {
+            text-align: center;
+            color: #1899D6;
+            font-size: 36px;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 700;
+            margin-bottom: 27px;
+        }
+    }
+    
+    .food-mg-bot {
+        margin-bottom: 32px;
+    }
+    
+    .food-text {
+        h3 {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 500;
+            font-size: 26px;
+            color: #1899D6;
+        }
+        p {
+            color: #6c6c6c;
+            @include opensans-text;
+            font-size: 16px;
+        }
+    }
+    
+    .food-block-btn-wrap {
+        text-align: center;
+    }
+    
+    .food-block-btn {
+        background-image: url(../img/arrow.png);
+        background-repeat: no-repeat;
+        background-position: 250px 14px;
+        margin-bottom: 60px;
+        font-size: 18px;
+        background-color: $btn-and-footer;
+        width: 297px;
+        height: 50px;
+        color: #fff;
+        @include font-and-border;
+        -webkit-transition: 0.5s ease;
+        transition: 0.5s ease;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    
+    .add-to-cart-mg {
+        margin-top: 23px;
+    }
+    
+    .kes {
+        color: #6c6c6c;
+        @include opensans-text;
+        font-size: 45px;
+    }
+    
+    .add-to-cart-btn {
+        width: 177px;
+        height: 50px;
+        background: $btn-and-footer;
+        color: #fffefe;
+        font-size: 18px;
+        @include font-and-border;
+        background-image: url(../img/shape-add-to-card.png);
+        background-repeat: no-repeat;
+        background-position: 11px 11px;
+        -webkit-transition: 0.5s ease;
+        transition: 0.5s ease;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    
+    .line-add-to-cart {
+        margin-top: 17px;
+        margin-bottom: 45px;
+        width: 100%;
+        height: 1px;
+        background-color: $line;
+    }
+    
+    .more-from-bookstore-btn {
+        @include font-and-border;
+        width: 297px;
+        height: 50px;
+        background: $btn-and-footer;
+        color: #fff;
+        font-size: 18px;
+        -webkit-transition: 0.5s ease;
+        transition: 0.5s ease;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    /*Get in touch section*/
+    
+    .get-in-touch {
+        .wrapper {
+            text-align: center;
+            margin: 0 auto;
+            h2 {
+                color: #1899D6;
+                font-size: 30px;
+                font-family: 'Roboto Condensed', sans-serif;
+                font-weight: 700;
+                margin-bottom: 17px;
+            }
+            p {
+                line-height: 26px;
+                color: #7f7f7f;
+                margin: 0px;
+                font-size: 18px;
+                @include opensans-text;
+            }
+            .line-get-in-touch {
+                width: 42%;
+                height: 1px;
+                background-color: $line;
+                margin: 0 auto;
+                margin-top: 95px;
+                margin-bottom: 57px;
+                .message-img {
+                    position: relative;
+                    top: -34px;
+                }
+            }
+        }
+    }
+    
+    .get-in-touch-input {
+        font-size: 18px;
+        padding-left: 20px;
+        border: 1px solid #a3a3a3;
+        border-radius: 4px;
+        width: 440px;
+        height: 50px;
+        margin-bottom: 25px;
+        @include opensans-text;
+        -webkit-transition: 0.5s ease;
+        transition: 0.5s ease;
+    }
+    
+    .send-btn {
+        @include font-and-border;
+        width: 440px;
+        height: 50px;
+        background: $btn-and-footer;
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 62px;
+        -webkit-transition: 0.5s ease;
+        transition: 0.5s ease;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    
+    #get-in-touch-textarea {
+        max-width: 440px;
+        max-height: 163px;
+        height: 163px;
+        width: 440px;
+        margin-bottom: 10px;
+    }
+    /*footer*/
+    
+    footer {
+        background-color: $btn-and-footer;
+        ul {
+            text-align: center;
+            padding: 0;
+        }
+        ul li {
+            list-style: none;
+            padding-top: 28px;
+            padding-bottom: 5px;
+        }
+        a {
+            padding-left: 18px;
+            padding-right: 18px;
+            color: #fff;
+            font-size: 16px;
+            @include opensans-text;
+            -webkit-transition: 0.5s ease;
+            transition: 0.5s ease;
+            &:hover {
+                color: #fff;
+                text-decoration: none;
+                opacity: 0.8;
+            }
+        }
+        .line-footer {
+            margin: 0 auto;
+            width: 21%;
+            height: 1px;
+            background: #fff;
+        }
+        .copyright {
+            @include opensans-text;
+            text-align: center;
+            margin-top: 16px;
+            padding-bottom: 31px;
+            margin-bottom: 0px;
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+    
+    @import "media";
